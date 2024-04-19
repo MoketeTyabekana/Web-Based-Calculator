@@ -20,7 +20,7 @@ body{
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px #00000040;
-    background-color: rgba(32, 65, 101, 0.959);
+    background-color: rgba(0, 22, 46, 0.959);
     text-align: center;
 }
 
@@ -39,6 +39,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    cursor: pointer;
 }
 
 .calculator-keys button{
@@ -49,7 +50,7 @@ body{
     box-shadow: 0 0 rgb(16, 43, 73);
     background-color: rgba(32, 65, 101, 0.959);
     color:  rgba(255, 255, 255, 0.959);
-    border: 0.5px solid  rgb(0, 41, 85);
+    border: none;
 
 }
 
@@ -57,4 +58,21 @@ body{
    color: rgba(32, 65, 101, 0.959);
    background-color: rgba(255, 255, 255, 0.959);
    transition: 0.3s ease-in;
+}
+
+.calculator-keys .operator{
+ background-color: rgb(0, 61, 125);
+}
+
+.calculator-keys .all-clear{
+    background-color: rgb(255, 136, 0);
+}
+
+.calculator-keys .clear-entry{
+    background-color: rgb(255, 0, 0);
+}
+
+.calculator-keys button:active{
+    background-color: rgb(0, 0, 41);
+    color: #ffffff;
 }
