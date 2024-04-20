@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mokete Elias Tyabekana">
     <title>Calculator</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
        
    
 </head>
@@ -17,29 +17,30 @@
         <div class="calculator-screen" id="calculator-screen">0</div>
         
         <div class="calculator-keys">
-            <button type="button">7</button>
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button">&#8730;</button>
-            <button type="button">4</button>
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button" class="operator">&divide;</button>
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button" class="operator">&times;</button>
-            <button type="button">0</button>
-            <button type="button">.</button>
-            <button type="button">+/-</button>
-            <button type="button" class="operator">-</button> 
-            <button type="button" class="all-clear">AC</button>
-            <button type="button"class="clear-entry">CE</button>
-            <button type="button" class="operator">+</button>
-            <button type="button" class="operator">=</button>
+            <button type="button" onclick="inputDigit('7')">7</button>
+            <button type="button" onclick="inputDigit('8')">8</button>
+            <button type="button" onclick="inputDigit('9')">9</button>
+            <button type="button" onclick="getSquareRoot()">&#8730;</button>
+            <button type="button" onclick="inputDigit('4')">4</button>
+            <button type="button" onclick="inputDigit('5')">5</button>
+            <button type="button" onclick="inputDigit('6')">6</button>
+            <button type="button" class="operator" onclick="handleOperator('/')">&divide;</button>
+            <button type="button" onclick="inputDigit('1')">1</button>
+            <button type="button" onclick="inputDigit('2')">2</button>
+            <button type="button" onclick="inputDigit('3')">3</button>
+            <button type="button" class="operator" onclick="handleOperator('*')">&times;</button>
+            <button type="button" onclick="inputDigit('0')">0</button>
+            <button type="button" onclick="inputDecimal('.')">.</button>
+            <button type="button" onclick="toggleSign('-1')">+/-</button>
+            <button type="button" class="operator" onclick="handleOperator('-')">-</button> 
+            <button type="button" class="all-clear" onclick="allClear('AC')">AC</button>
+            <button type="button"class="clear-entry" onclick="clearEntry('CE')">CE</button>
+            <button type="button" class="operator" onclick="handleOperator('=')">=</button>
+            <button type="button" class="operator" onclick="handleOperator('+')">+</button>
+          
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
